@@ -23,7 +23,8 @@ module.exports = {
   },
 
   down: (queryInterface: QueryInterface) => {
-    return queryInterface.bulkDelete("Settings", {});
-          key: ["userCreation", "userApiToken"],
+    return queryInterface.bulkDelete("Settings", {
+      key: ["userCreation", "userApiToken"]
+    });
   }
 };
